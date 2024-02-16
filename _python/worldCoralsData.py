@@ -97,3 +97,4 @@ coral_data.creator = creator_name
 data_into_file = '/Users/EC13/Documents/Projects/Coral Reefs/Webscraping/info/CoralsoftheWorld_ImageData.csv'
 
 coral_data.to_csv(data_into_file, sep=';')
+# coral_data = pd.read_csv(data_into_file, sep=';')
