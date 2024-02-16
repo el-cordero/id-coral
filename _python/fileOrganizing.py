@@ -25,7 +25,7 @@ for species, files in file_groups.items():
 
 # Base directory where the new species folders will be created
 # This should be an existing directory where you want to organize the files
-base_dir = '/Users/EC13/Documents/Projects/Coral Reefs/Webscraping/data'
+base_dir = '/Users/EC13/Documents/Projects/Coral Reefs/Webscraping/data/images/raw'
 
 # Directory containing the original files
 source_dir = '/Users/EC13/Documents/Projects/Coral Reefs/Webscraping/images'
@@ -55,15 +55,3 @@ for species, files in file_groups.items():
     move_files(source_dir,species_dir,files)
 
 print("Files have been organized into species directories.")
-
-
-# out_path = '/Users/EC13/Documents/Projects/Coral Reefs/Webscraping/data'
-# for species, files in file_groups.items():
-
-#     # Move each file into the species directory
-#     for file_name in files:
-#         data_path = os.path.join(out_path,species, file_name)
-#         if os.path.exists(data_path):
-#             new_path = data_path + '.jpg'
-#             # Move the file
-#             shutil.move(data_path, new_path)
